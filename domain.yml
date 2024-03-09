@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - edit
+  - disagreements
+  - create
+  - Wizard
+  - talk_pages
+  - images
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_happy
+  - not_challegence
+  - choose_language
+
+responses:
+  utter_language:
+  - text: "Please choose your language?"
+    buttons:
+    - title: "Telugu"
+      payload: "/greet"
+    - title: "Hindi"
+      payload: "/greet"
+    - title: "English"
+      payload: "/greet"
+  utter_edit:
+  - text: "To edit a page, look for the 'Edit this page' tab at the top. This opens the Visual editing interface."
+
+  utter_disagreements:
+  - text: "If you disagree with another editor, discuss it on the talk page and try to reach a consensus. If that fails, you can request mediation from other editors."
+
+  utter_create:
+  - text: "Before creating a new article, search Wikipedia to see if there's already a page on the topic. If not, you can use the article wizard (a guided process) or start a new page following Wikipedia's guidelines."
+
+  utter_Wizard:
+  - text: "Great, carry on!"
+
+  utter_talk_pages:
+  - text: "Talk pages are for discussing edits and improvements to an article. You can add comments and suggestions there."
+
+  utter_images:
+  - text: "To upload images, visit the Wikimedia Commons website   and follow the instructions to upload your files."
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://www.beachesnearme.in/wp-content/uploads/2018/12/Mypadu_beach_nellore-1200x900.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
